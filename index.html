@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Al Amin — Customer Support, Video Editor, Web &amp; App Developer</title>
+<meta name="description" content="Portfolio of Al Amin: customer support, video editing, web and app development, media buying and AI creative content. Based in Bangladesh.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--navy:#0f172a;--gold:#f59e0b;--gold2:#fde047;--ink:#111827;--muted:#64748b;--line:#e2e8f0;--bg:#f8fafc}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,-apple-system,sans-serif;color:var(--ink);line-height:1.65;background:#fff}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,0.95);border-bottom:1px solid var(--line);backdrop-filter:blur(6px)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-weight:800;font-size:20px;letter-spacing:1px}.logo span{color:var(--gold)}
+nav{display:flex;gap:18px;flex-wrap:wrap}
+nav a{text-decoration:none;font-weight:600;font-size:14px;color:#334155}
+nav a:hover{color:var(--gold)}
+.btn{display:inline-block;text-decoration:none;background:var(--gold);color:#111;font-weight:700;padding:12px 26px;border-radius:999px;border:2px solid var(--gold)}
+.btn:hover{background:var(--gold2)}
+.btn-outline{background:transparent;color:#fff;border-color:#fff}
+.btn-outline:hover{background:#fff;color:#111}
+.hero{background:linear-gradient(135deg,#0f172a,#1e3a5f 55%,#b45309);color:#fff;padding:72px 0 64px}
+.hero-grid{display:grid;grid-template-columns:1.4fr 0.6fr;gap:32px;align-items:center}
+.badge{display:inline-block;background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.35);padding:8px 18px;border-radius:999px;font-size:14px;font-weight:600}
+.hero h1{font-size:52px;line-height:1.15;margin:18px 0 10px}
+.hero h1 span{color:var(--gold2)}
+.hero p.lead{font-size:19px;color:#e2e8f0;max-width:620px}
+.hero .ctas{margin-top:26px;display:flex;gap:14px;flex-wrap:wrap}
+.mono{width:200px;height:200px;border-radius:50%;background:linear-gradient(135deg,var(--gold),#fde047);color:#111;display:flex;align-items:center;justify-content:center;font-size:64px;font-weight:800;margin:0 auto;border:6px solid rgba(255,255,255,0.25)}
+.mono-cap{text-align:center;margin-top:14px;color:#e2e8f0;font-size:14px}
+section{padding:64px 0}
+section.alt{background:var(--bg)}
+h2{font-size:32px;line-height:1.3;margin-bottom:8px}
+.kicker{color:#b45309;font-weight:700;letter-spacing:1px;text-transform:uppercase;font-size:13px}
+.sub{color:var(--muted);max-width:720px;margin-bottom:28px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px}
+.card h3{font-size:18px;margin-bottom:8px}
+.card p{color:#475569;font-size:15px}
+.tag{display:inline-block;background:#fef3c7;color:#7c2d12;font-weight:700;font-size:12px;padding:4px 12px;border-radius:999px;margin:3px 3px 0 0}
+.skill-level{font-size:13px;font-weight:700;color:#0f766e;margin-top:10px}
+.timeline{border-left:3px solid var(--gold);margin-left:8px;padding-left:26px}
+.timeline .item{margin-bottom:28px;position:relative}
+.timeline .item:before{content:"";position:absolute;left:-35px;top:6px;width:14px;height:14px;border-radius:50%;background:var(--gold);border:3px solid #fff;box-shadow:0 0 0 2px var(--gold)}
+.timeline .when{font-weight:700;color:#b45309;font-size:14px}
+.filters{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:22px}
+.filters button{border:1px solid var(--line);background:#fff;padding:9px 18px;border-radius:999px;font-weight:600;cursor:pointer}
+.filters button.active{background:var(--navy);color:#fff;border-color:var(--navy)}
+.project{display:none}
+.project.show{display:block}
+.testi{background:#fff7ed;border:1px dashed #f59e0b;border-radius:16px;padding:28px;text-align:center}
+form{display:grid;gap:14px;max-width:560px}
+input,textarea{width:100%;padding:13px 16px;border:1px solid var(--line);border-radius:12px;font:inherit}
+button.send{background:var(--navy);color:#fff;border:0;padding:14px 26px;border-radius:999px;font-weight:700;cursor:pointer;font-size:16px}
+.contact-links{display:flex;gap:12px;flex-wrap:wrap;margin:18px 0}
+.contact-links a{text-decoration:none;font-weight:700;border:1px solid var(--line);padding:11px 20px;border-radius:999px;background:#fff}
+.note{font-size:14px;color:var(--muted)}
+footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:14px;text-align:center}
+.reveal{opacity:1;transform:none}
+.reveal.visible{opacity:1;transform:none}
+@media(max-width:760px){
+.hero-grid{grid-template-columns:1fr}.mono{width:150px;height:150px;font-size:48px}
+.hero h1{font-size:38px}.grid{grid-template-columns:1fr}
+.nav{height:auto;flex-wrap:wrap;padding:10px 0;gap:10px}nav{display:flex;gap:12px;font-size:13px}
+h2{font-size:26px}section{padding:44px 0}
+}
+</style></head><body>
+<header><div class="wrap nav">
+<div class="logo">AL AMIN<span>.</span></div>
+<nav>
+<a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#services">Services</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
+</nav>
+<a class="btn" href="#contact" style="padding:9px 20px">Hire Me</a>
+</div></header>
+
+<section class="hero" id="home"><div class="wrap hero-grid">
+<div>
+<span class="badge">● Available for freelance work</span>
+<h1>Al Amin<br><span>Customer Support, Video &amp; Web Creator</span></h1>
+<p class="lead">I help brands support their customers, create videos people remember, and grow online — with clear communication, practical design, and AI-powered creativity.</p>
+<div class="ctas">
+<a class="btn" href="#projects">View My Work</a>
+<a class="btn btn-outline" href="#contact">Contact Me</a>
+</div>
+<p style="margin-top:20px;color:#cbd5e1">Based in Bangladesh • Working in English and Bangla</p>
+</div>
+<div><div class="mono">AA</div><p class="mono-cap">Al Amin<br>Digital Services Professional</p></div>
+</div></section>
+
+<section id="about"><div class="wrap reveal">
+<p class="kicker">About Me</p><h2>Disciplined, practical, and focused on useful work</h2>
+<p class="sub">I served in the Bangladesh Army from February 2022 to January 2025, and I am continuing my studies with a BBS at Chandpur Government College. Alongside that, I trained in AI creative tools and digital marketing — learning how to turn an idea into a poster, a video, a website, or a campaign that a real customer can understand and use.</p>
+<p class="sub">My approach is simple: understand the problem first, keep the message clear, and deliver work that is ready to publish — not just good-looking files.</p>
+<p><span class="tag">Customer Support</span><span class="tag">Video Editing</span><span class="tag">Web Development</span><span class="tag">App Development</span><span class="tag">Media Buying</span><span class="tag">AI Video &amp; Prompts</span></p>
+</div></section>
+
+<section id="skills" class="alt"><div class="wrap reveal">
+<p class="kicker">Skills &amp; Expertise</p><h2>What I can do</h2><p class="sub">Skill levels below are self-assessed, based on training and completed projects on this page.</p>
+<div class="grid">
+<div class="card"><h3>🎧 Customer Support</h3><p>Polite, clear and fast handling of customer questions, complaints and orders.</p><p class="skill-level">Level: Advanced</p></div>
+<div class="card"><h3>🎬 Video Editing</h3><p>Short promos, motion graphics and social videos, edited for mobile viewing.</p><p class="skill-level">Level: Advanced</p></div>
+<div class="card"><h3>🌐 Web Development</h3><p>Modern, responsive websites with HTML, CSS and JavaScript.</p><p class="skill-level">Level: Intermediate</p></div>
+<div class="card"><h3>📱 App Creation &amp; Development</h3><p>App ideas, structure and front-end builds for simple, useful apps.</p><p class="skill-level">Level: Intermediate</p></div>
+<div class="card"><h3>📣 Media Buying &amp; Facebook Ads</h3><p>Ad copy, targeting, and campaign structure in Ads Manager.</p><p class="skill-level">Level: Intermediate</p></div>
+<div class="card"><h3>🤖 AI Video &amp; Prompt Engineering</h3><p>AI video with Gemini and Google Flow, image prompts, and voice-synced promos.</p><p class="skill-level">Level: Advanced</p></div>
+<div class="card"><h3>▶️ YouTube &amp; SEO</h3><p>Channel setup, titles, and SEO-score-based posting.</p><p class="skill-level">Level: Intermediate</p></div>
+<div class="card"><h3>🎨 Posters &amp; Presentations</h3><p>Marketing posters, calendars and slide decks with clean Bangla typography.</p><p class="skill-level">Level: Advanced</p></div>
+<div class="card"><h3>💬 Facebook Page Automation</h3><p>Page setup, monitoring, and automated replies for comments and Messenger.</p><p class="skill-level">Level: Intermediate</p></div>
+</div></div></section>
+
+<section id="services"><div class="wrap reveal">
+<p class="kicker">Services</p><h2>Services I offer</h2><p class="sub">Clear scope, clear delivery. Prices are agreed per project — contact me with your brief.</p>
+<div class="grid">
+<div class="card"><h3>Customer Support</h3><p>Customer handling for online shops and pages: replies, order help, and problem-solving with a polite, professional tone.</p></div>
+<div class="card"><h3>Video Editing</h3><p>Promo videos, motion graphics and short social clips, delivered as ready-to-post MP4 files.</p></div>
+<div class="card"><h3>Web Development</h3><p>Portfolio, business and landing websites that work on mobile, tablet and desktop.</p></div>
+<div class="card"><h3>App Creation &amp; Development</h3><p>Simple app builds and prototypes, from idea and screens to a working front end.</p></div>
+<div class="card"><h3>Media Buying &amp; Facebook Ads</h3><p>Ad copy, audience targeting and campaign setup to reach the right customers.</p></div>
+<div class="card"><h3>AI Creative Content</h3><p>AI posters, product videos, presentations and ad creatives with proper Bangla typography.</p></div>
+</div></div></section>
+
+<section id="projects" class="alt"><div class="wrap reveal">
+<p class="kicker">Portfolio / Projects</p><h2>Selected work</h2><p class="sub">Real projects completed during training and assessment work. No invented clients or results are shown here.</p>
+<div class="filters">
+<button class="active" data-f="all">All</button><button data-f="video">Video</button><button data-f="design">Design</button><button data-f="web">Web</button><button data-f="guide">Guide</button>
+</div>
+<div class="grid" id="projectGrid">
+<div class="card project show" data-c="video"><h3>Marketing Concept Motion Video</h3><p>51-second vertical Bangla video: marketing means building trust, not just selling. Word-synced text and male narration.</p><p><span class="tag">Video</span><span class="tag">AI + Motion Graphics</span></p></div>
+<div class="card project show" data-c="video"><h3>NOOR Perfume Promo &amp; Ads Copy</h3><p>28-second product promo with full Facebook Ads Copy, target audience and three marketing angles.</p><p><span class="tag">Video</span><span class="tag">Ads Copy</span></p></div>
+<div class="card project show" data-c="video"><h3>Ai Crouse Premium Watch Ad</h3><p>60-second vertical product-led ad with real watch footage, price and order-button CTA held to the end.</p><p><span class="tag">Video</span><span class="tag">Product Ad</span></p></div>
+<div class="card project show" data-c="video"><h3>AI Advanced Course Promo</h3><p>Talking-portrait style promo for an AI course, with Bangla text animation synced to narration.</p><p><span class="tag">Video</span><span class="tag">Course Promo</span></p></div>
+<div class="card project show" data-c="design"><h3>NOOR Perfume Design Set</h3><p>Three 1080×1350 creatives with different purposes: sales poster, social engagement creative, and cinematic premium poster.</p><p><span class="tag">Design</span><span class="tag">1080×1350</span></p></div>
+<div class="card project show" data-c="design"><h3>MRL Group Calendar 2027</h3><p>6-page A4 calendar, two months per page, built to match a supplied reference page exactly.</p><p><span class="tag">Design</span><span class="tag">Print</span></p></div>
+<div class="card project show" data-c="web"><h3>Demo E-commerce Shop</h3><p>Full Next.js + Node.js + MongoDB shop project: home, checkout, tracking, coupons and admin panel, delivered as a runnable project.</p><p><span class="tag">Web</span><span class="tag">Next.js</span></p></div>
+<div class="card project show" data-c="guide"><h3>Amin041 Podcast Clip Guide</h3><p>8-page guide with seven copy-ready podcast-clip prompts, personalised as Amin041's own creation.</p><p><span class="tag">Guide</span><span class="tag">Prompts</span></p></div>
+</div></div></section>
+
+<section id="experience"><div class="wrap reveal">
+<p class="kicker">Experience &amp; Education</p><h2>Journey so far</h2>
+<div class="timeline">
+<div class="item"><p class="when">February 2022 — January 2025</p><h3>Bangladesh Army</h3><p>Service in the Bangladesh Army. This period built discipline, responsibility and teamwork that I bring to client work today.</p></div>
+<div class="item"><p class="when">Ongoing</p><h3>BBS — Chandpur Government College</h3><p>Bachelor of Business Studies, currently ongoing.</p></div>
+<div class="item"><p class="when">AI Skills Training — Ai Crouse</p><h3>AI Advanced Course</h3><p>Training in Cloud AI, professional video editing, website creation, app coding, Google Flow AI video, prompt engineering, YouTube SEO, text-to-voice and songs, Facebook Page automation, voice cloning, and Facebook Ads Manager.</p></div>
+<div class="item"><p class="when">Ongoing</p><h3>Independent Digital Services</h3><p>Building client-ready services in customer support, video, web, app development and media buying. Fiverr gig drafts are ready and the profile link will be added here once published.</p></div>
+</div></div></section>
+
+<section id="testimonials" class="alt"><div class="wrap reveal">
+<p class="kicker">Testimonials</p><h2>What clients say</h2>
+<div class="testi">
+<p style="font-size:18px">Client testimonials will appear here as published work grows.</p>
+<p class="note" style="margin-top:10px">No reviews have been invented for this section. If you have worked with me, please share your feedback through the contact form below and it can be added here with your permission.</p>
+</div></div></section>
+
+<section id="contact"><div class="wrap reveal">
+<p class="kicker">Contact</p><h2>Let's work together</h2><p class="sub">Tell me about your project — product, video, website, or ad campaign — and I will reply with a clear plan and delivery time.</p>
+<div class="contact-links">
+<a href="#" id="emailBtn">✉️ Email Me</a>
+<a href="#" id="waBtn">💬 WhatsApp</a>
+<a href="#" id="tgBtn">✈️ Telegram</a>
+</div>
+<form id="contactForm">
+<input type="text" id="cfName" placeholder="Your name" required>
+<input type="email" id="cfEmail" placeholder="Your email" required>
+<textarea id="cfMsg" rows="5" placeholder="Tell me about your project..." required></textarea>
+<button class="send" type="submit">Send Message</button>
+<p class="note" id="formNote">Sending opens your email app with your message ready to send. Fiverr profile link coming soon.</p>
+</form></div></section>
+
+<footer><div class="wrap">
+<p>© 2026 Al Amin • Portfolio built for AI Practical Assessment — Task 04</p>
+<p>Tools used: Claude AI (planning, content and code) • HTML, CSS &amp; JavaScript • GitHub Pages</p>
+</div></footer>
+
+<script>
+// Contact details are set here so the site owner can update them in one place.
+// Values below match the contact details already published on the owner's existing portfolio.
+var CONTACT_EMAIL = "arfinso2244@gmail.com";
+var CONTACT_PHONE = "+8801619154599";
+var CONTACT_TELEGRAM = "alamin041";
+document.getElementById("emailBtn").href = "mailto:" + CONTACT_EMAIL;
+document.getElementById("waBtn").href = "https://wa.me/" + CONTACT_PHONE.replace("+", "");
+document.getElementById("tgBtn").href = "https://t.me/" + CONTACT_TELEGRAM;
+document.getElementById("contactForm").addEventListener("submit", function(e){
+  e.preventDefault();
+  var subject = encodeURIComponent("Portfolio enquiry from " + document.getElementById("cfName").value);
+  var body = encodeURIComponent(document.getElementById("cfMsg").value + "\n\n— " + document.getElementById("cfName").value + " (" + document.getElementById("cfEmail").value + ")");
+  window.location.href = "mailto:" + CONTACT_EMAIL + "?subject=" + subject + "&body=" + body;
+  document.getElementById("formNote").textContent = "Your email app should now open with your message. If it did not, please use the Email button above.";
+});
+// Project filter
+document.querySelectorAll(".filters button").forEach(function(btn){
+  btn.addEventListener("click", function(){
+    document.querySelectorAll(".filters button").forEach(function(b){b.classList.remove("active")});
+    btn.classList.add("active");
+    var f = btn.getAttribute("data-f");
+    document.querySelectorAll(".project").forEach(function(card){
+      card.classList.toggle("show", f === "all" || card.getAttribute("data-c") === f);
+    });
+  });
+});
+// Scroll reveal
+var io = new IntersectionObserver(function(entries){
+  entries.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add("visible"); io.unobserve(en.target); } });
+}, {threshold: 0.12});
+document.querySelectorAll(".reveal").forEach(function(el){ io.observe(el); });
+</script>
+</body></html>
